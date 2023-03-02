@@ -1,0 +1,224 @@
+
+/*set header rule*/
+.header {
+  margin-bottom: 80px;
+}
+
+/*layout heading*/
+.heading {
+  max-width: 1140px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.heading__logo--leospa {
+  margin-right: 17%;
+}
+
+/*layout nav bar*/
+.heading__nav {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/*layout nav links*/
+.nav__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #263a41;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 20px;
+  font-family: "Roboto";
+}
+/*set links hover+active*/
+.nav__link:is(:hover, :active) {
+  color: #ff817e;
+}
+
+/*set banner rule*/
+.banner {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/*layout banner-text*/
+.banner__text {
+  text-align: left;
+}
+.banner__text--spa-beauty {
+  color: #ff817e;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 27px;
+  margin: 0px 0px 20px;
+}
+
+.banner__text--title {
+  font-size: 60px;
+  line-height: 75px;
+  margin: 0px 0px 25px;
+}
+
+/*set banner-nav rule*/
+.banner__nav {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 15px;
+}
+/*layout banner links(buttons)*/
+.banner__link {
+  display: block;
+  text-decoration: none;
+  flex: 0 1 auto;
+  text-align: center;
+}
+.banner__link--reserve-now {
+  background-color: #ff817e;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 12.8px;
+  padding: 20px 25px;
+  text-transform: uppercase;
+}
+.banner__link--reserve-now:hover {
+  color: #212529;
+}
+.banner__link--watch-our-story {
+  color: #555555;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 300;
+  margin: 0px 0px 0px 15px;
+}
+.banner__link--watch-our-story:hover {
+  color: #ff817e;
+}
+
+.banner__photo--left {
+  width: 12.5%;
+  position: absolute;
+  left: 0px;
+  top: 25%;
+  z-index: -1;
+}
+.banner__photo--right {
+  width: 43.3%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -2;
+}
+.about {
+  position: relative;
+}
+/*set about section rule*/
+.about__heading {
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about__item--our-spa {
+  color: #888888;
+  font-size: 20px;
+  line-height: 16px;
+  margin: 0px 0px 27px;
+  text-transform: uppercase;
+}
+
+.about__item--link {
+  text-decoration: none;
+  background-color: #ff817e;
+  border-radius: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 12.8px;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+.about__item--link:hover {
+  color: #212529;
+}
+
+/*layout about-images*/
+.about__photo--center {
+  margin-bottom: 40px;
+  width: 84px;
+}
+.about__photo:not(.about__photo--center) {
+  position: absolute;
+  z-index: -1;
+}
+.about__photo--left {
+  top: 0%;
+}
+
+.about__photo--right {
+  top: 40%;
+  right: -5%;
+}
+
+/*layout service section*/
+.service__sec-card{
+  display: flex;
+  flex-flow: row;
+  gap: 5px;
+}
+.service__card {
+  flex:0 1 auto;
+  position: relative;
+}
+
+.card__hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ff817e;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.card__photo--hover {
+  color: #ffffff;
+  width: 47px;
+  display: block;
+}
+
+.card__title--hover {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+
+.service__card:hover .card__hover{
+  display: flex;
+}
+

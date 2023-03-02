@@ -1,0 +1,346 @@
+/*layout procedures section*/
+
+/*layout testimonial section*/
+.testimonial {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff9f8;
+}
+
+.testimonial__content {
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testimonial__icon--quote {
+  width: 59px;
+  margin: 0 0 49px;
+}
+
+.testimonial__client-perspective {
+  color: #263a41;
+  font-family: "Rufina";
+  font-size: 18px;
+  line-height: 35px;
+  margin: 0px 0px 43px;
+}
+
+.testimonial__client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial .client-info--photo {
+  width: 76px;
+  height: 76px;
+  margin: 0 0 22px;
+}
+.testimonial .client-info--photo img {
+  border-radius: 50%;
+}
+
+.testimonial .client-info--name {
+  color: #263a41;
+  font-family: "Rufina";
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.testimonial__client-info div:last-of-type span:last-of-type {
+  color: #263a41;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.testimonial__owl-dot {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin: 30px 0 50px;
+}
+
+.testimonial__owl-dot > .dot {
+  background-color: #ffc3c2;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
+
+/*layout team content*/
+.member__card {
+  flex: 0 1 350px;
+  box-shadow: 0 5px 20px #f0f0f0;
+}
+.member__media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 0 29px;
+  display: none;
+}
+
+.member__media-logo {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: #30383b;
+  display: block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+.member__media-logo:hover {
+  background-color: #ff817e;
+  color: white;
+  border-color: #ff817e;
+}
+
+.member__card:hover > .member__media {
+  display: flex;
+}
+.member__card:hover > .member__position {
+  margin: 0;
+}
+.member__card:hover {
+  box-shadow: 0 10px 25px #d9d9d9;
+}
+
+/*layout footer*/
+.footer {
+  background-color: #fff9f8;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.footer__logo--leopsa {
+  width: 109px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__nav-link {
+  color: #263a41;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 0px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__media-logo {
+  color: #3a414e;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 11.2px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+:is(.footer__nav-link, .footer__media-logo):hover {
+  color: #ff817e;
+}
+
+.copyright {
+  color: #888888;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  color: #ff817e;
+}
+
+/*layout apointment section*/
+.apointment {
+  display: flex;
+}
+
+.apointent__photo {
+  flex: 0 1 40%;
+}
+
+.apointment__form-container {
+  flex: 1 0 60%;
+  background-color: #fff9f8;
+}
+
+.apointment__form {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap row;
+  align-content: center;
+  align-items: baseline;
+  row-gap: 30px;
+  column-gap: 1%;
+}
+
+.apointment__input {
+  flex: 0 1 49%;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 27px;
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 1px solid #d4d3d3;
+  background-color: transparent;
+}
+
+.apointment__input::placeholder {
+  text-transform: uppercase;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.apointment__input--comment {
+  flex: 1 1 100%;
+}
+
+.apointment__button {
+  flex: 0 0 217px;
+  display: block;
+  background-color: #ff817e;
+  border-radius: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 12.8px;
+  padding: 20px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+.apointment__button:hover {
+  color: #263a41;
+  border: 1px solid #263a41;
+}
+
+/*layout contact section*/
+.contact__frame {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact__leospa {
+  flex: 0 1 33.33333%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__contact {
+  display: flex;
+  align-items: center;
+}
+.contact__icon {
+  padding: 17px;
+  display: block;
+  background-color: #ff817e;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+}
+
+.contact__link {
+  align-self: center;
+}
+
+.contact__link > a,
+.contact__contact > span {
+  display: block;
+  color: #888888;
+  font-size: 14px;
+  line-height: 27px;
+  padding: 0px 0px 0px 16px;
+  text-align: left;
+}
+
+.contact__link > a:hover {
+  color: #ff817e;
+}
+
+.contact__form {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.contact__form *{
+  border:0.5px solid #263a41;
+  min-width: 170px;
+}
+
+.contact__input {
+  width: 100%;
+  flex: 1 1 auto;
+  min-width: 217px;
+  background-color: #ffffff;
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 27px;
+  margin: 0px 0px 25px;
+  padding: 10px 20px;
+}
+
+.contact__button {
+  display: block;
+  align-items: flex-start;
+  background-color: #ff817e;
+  border-radius: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 12.8px;
+  padding: 20px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border:none;
+}
+
+.contact__button:hover {
+  color: #263a41;
+  border: 1px solid #263a41;
+}
+
+.contact__input::placeholder{
+  text-transform: uppercase;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 27px;
+}
