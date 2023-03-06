@@ -241,7 +241,7 @@ body {
 }
 
 .colleague__paragraph {
-  grid-area: 1/2/5/3;
+  grid-area: 2/2/5/3;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
