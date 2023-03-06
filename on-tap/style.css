@@ -100,6 +100,10 @@ body {
   padding: 17px 0px 0px;
 }
 
+.main section {
+  margin: 120px 0px 0px;
+}
+
 .intro {
   display: grid;
   grid-template-columns: 419px 671px;
@@ -192,12 +196,18 @@ body {
   display: grid;
   grid-template-columns: 255px 845px;
   grid-template-rows: repeat(4, auto);
-  font-family: "Poppins";
 }
 
 .colleage__title {
   grid-column: 1/3;
   grid-row: 1/2;
+  color: #1a1b1f;
+  font-family: "Poppins";
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 62px;
+  margin: 20px 0px 15px;
+  padding: 30px 0px 0px;
 }
 
 .colleage__photo {
@@ -206,6 +216,7 @@ body {
   grid-row: 2/3;
   border-radius: 200px;
   color: #1a1b1f;
+  font-family: "Poppins";
   line-height: 28px;
 }
 
@@ -217,6 +228,7 @@ body {
   font-weight: 500;
   line-height: 34px;
   margin: 10px 0px 0px;
+  font-family: "Poppins";
   text-align: left;
 }
 
@@ -224,16 +236,18 @@ body {
   grid-column: 1/2;
   grid-row: 4/5;
   color: #1a1b1f;
+  font-family: "Poppins";
   line-height: 28px;
 }
 
-.colleage__paragraph {
+.colleague__paragraph {
   grid-area: 1/2/5/3;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
   margin: 0px 0px 50px;
   padding: 30px 0px 0px;
+  font-family: "Poppins";
 }
 
 .booking {
@@ -266,9 +280,9 @@ body {
 .booking__form {
   grid-area: 1/2/2/3;
   display: grid;
-  grid-template-columns: 236px 236px;
+  grid-template-columns: auto auto;
   grid-template-rows: 20px 60px 20px 150px 48px;
-  row-gap: 30px;
+  column-gap: 30px;
 }
 
 .booking__label {
@@ -342,11 +356,11 @@ input.booking__input {
 }
 
 .footer {
-    margin:121px 0px 60px;
+  margin: 121px 0px 60px;
 }
 
 .footer__content {
- margin-top:60px;
+  margin-top: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -375,6 +389,6 @@ input.booking__input {
   text-align: left;
 }
 
-.copyright{
-    text-align: center;
+.copyright {
+  text-align: center;
 }
