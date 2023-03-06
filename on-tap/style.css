@@ -108,6 +108,8 @@ body {
   display: grid;
   grid-template-columns: 419px 671px;
   grid-template-rows: auto auto;
+  column-gap: 50px;
+  row-gap: 10px;
 }
 
 .intro__photo {
@@ -116,7 +118,6 @@ body {
   border-radius: 15px;
   color: #1a1b1f;
   line-height: 28px;
-  margin: 0px 50px 50px 0px;
 }
 
 .intro__title {
@@ -127,7 +128,7 @@ body {
   font-size: 80px;
   font-weight: 500;
   line-height: 90px;
-  margin: 10px 0px;
+  margin: 97px 0px 0px;
 }
 
 .intro__paragraph {
@@ -343,7 +344,6 @@ input.booking__input {
 .booking__button--submit {
   grid-column: 1/2;
   grid-row: 5/6;
-
   background-color: #1a1b1f;
   border-radius: 8px;
   color: #ffffff;
@@ -351,8 +351,10 @@ input.booking__input {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  padding: 16px 25px 12px;
+  padding: 16px auto 16px;
   text-align: center;
+  display: inline-block;
+  width: 104px;
 }
 
 .footer {
