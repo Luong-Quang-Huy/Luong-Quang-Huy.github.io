@@ -392,5 +392,8 @@ input.booking__input {
 }
 
 .copyright {
+  color: #8f929e;
+  font-size: 14px;
+  line-height: 26px;
   text-align: center;
 }
