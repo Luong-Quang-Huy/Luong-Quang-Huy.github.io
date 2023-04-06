@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="" id="todo-form">
+        <h1 class="form__heading">Simple TodoApp</h1>
+        <input type="text" placeholder="What do you want to do?" name="task" id="task-input" autocomplete="off"><button type="button"
+            class="btn btn--create">Create</button><br>
+        <fieldset class="radio-container">
+            <label for="all"><input id="all" type="radio" class="form-radio" name="check" value="all">All</label>
+            <label for="check"><input id="active" type="radio" class="form-radio" name="check"
+                    value="active">Active</label>
+            <label for="completed"><input id="completed" type="radio" class="form-radio" name="check"
+                    value="completed">Completed</label>
+        </fieldset>
+        <ul id="task-list">
+            <!--<li><input type="checkbox" class="task-checkbox">Task<button type="button"
+                    class="btn--delete">delete</button></li>-->
+
+        </ul>
+        <label id="task-count-label" for="task-list"><span>You have <span id="pending-task-count">_</span> pending
+                task</span><button type="button" class="btn btn--clear-all">Clear all</button></label>
+        <label id="all-done-label" for="task-list">All done! :)</label>
+    </form>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #f43f5e, #0ea5e9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#todo-form {
+  margin-top: 48px;
+  background-color: white;
+  color: #334155;
+  font-family: ui-sans-serif;
+  width: 491px;
+  text-align: center;
+  padding: 48px 24px 24px;
+}
+.form__heading {
+  margin-bottom: 48px;
+  line-height: 48px;
+  font-size: 48px;
+  margin-top: 48px;
+  background-color: white;
+}
+
+#task-input {
+  width: 302px;
+  padding: 12px;
+  height: 51px;
+}
+.btn {
+  padding: 16px;
+  color: #ffffff;
+  width: 121px;
+  height: 51px;
+  cursor: pointer;
+}
+.btn--create {
+  background-color: #6366f1;
+  margin-left: 4px;
+}
+.btn--create:hover {
+  background-color: #818cf8;
+}
+
+.btn--clear-all {
+  background-color: #ef4444;
+}
+
+.btn--clear-all:hover {
+  background-color: #f87171;
+}
+
+.radio-container {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.form-radio {
+  margin-left: 5px;
+  margin-right: 2.5px;
+  background-color: #ffffff;
+  background-position: 50% 50%;
+  background-size: contain;
+  border-color: #6366f1;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.task-checkox {
+  color: #334155;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 4px 8px 0px 0px;
+}
+
+input:not(#task-input) {
+  cursor: pointer;
+}
+
+#task-count-label {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list {
+  margin-top: 12px;
+  list-style: none;
+}
+#task-list li {
+  height: 48px;
+  position: relative;
+  background-color: #f8fafc;
+  color: #334155;
+  text-align: left;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.btn--delete {
+  background-color: #ef4444;
+  color: #ffffff;
+  position: absolute;
+  width: 64px;
+  height: 48px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.btn--delete:hover {
+  background-color: #f87171;
+}
+
+#task-list li:hover .btn--delete {
+  display: inline;
+  animation-name: showDeleteButton;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes showDeleteButton {
+  from {
+    right: -64px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+#task-count {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.hidden{
+ display: hidden;
+}
