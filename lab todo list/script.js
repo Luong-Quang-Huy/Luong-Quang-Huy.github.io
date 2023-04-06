@@ -136,12 +136,9 @@ function updateUI() {
       return count;
     }
   }, 0);
-  taskCountLabel.classList.toggle("hidden", tasksData.length == 0);
+  taskCountLabel.classList.toggle("hidden", tasksData.every(task => task.state == STATE.COMPLETED));
 
-  allDoneLabel.classList.toggle(
-    "hidden",
-    tasksData.some((task) => task.state == STATE.ACTIVE)
-  );
+  allDoneLabel.classList.toggle("hidden",tasksData.some(task => task.state == STATE.ACTIVE));
 }
 
 renderTasksBy(STATE.ALL);
