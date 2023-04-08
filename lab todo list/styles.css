@@ -148,5 +148,5 @@ input:not(#task-input) {
 }
 
 .hidden{
- display: hidden;
+ display: none !important;
 }
