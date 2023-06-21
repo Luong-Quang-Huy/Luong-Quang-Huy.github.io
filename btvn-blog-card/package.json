@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://luong-quang-huy.github.io/btvn-blog-card/dist/index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
